@@ -1,0 +1,63 @@
+---
+layout: default
+title : News and Updates
+navbar_title: News
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+
+<!-- {% assign news_by_year = site.news | sort: "date" | reverse | limit: 3 | group_by_exp: "item", "item.date | date: '%Y'" -%} -->
+{% assign news_by_year = site.data.news | sort: "date" | reverse | limit: 3 | group_by_exp: "item", "item.date | date: '%Y'" -%}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+
+        <section id="news" class="pt-4">
+            <!-- <i class="fa-solid fa-rss"></i> -->
+            <h2 style="margin-bottom: 8px;"><img src="/assets/images/icons/megaphone.png" alt="Book" class="inline-badge" style="width: 35px; height: 35px;"> News and Updates </h2>
+        </section>
+        <hr />
+
+        {% for year in news_by_year %}
+        {% assign num_papers = year.items | size %}
+        <h4 class="pt-4 text-right" id="year-{{ year.name }}">{{ year.name }}</h4>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+            {% for item in year.items %}
+                {% include widgets/news_item.html item=item %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 250px">
+            {% for year in news_by_year %}
+            <a class="nav-link d-block text-center" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<!-- <div class="my-3 bg-white shadow-sm rounded-sm">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fa-solid fa-rss"></i> News</h6>
+    <div class="px-3 pb-1">
+        {% for year in news_by_year %}
+        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+            {% assign not_first = true %}
+            <div class="mr-3 text-muted my-1">{{ year.name }}</div>
+            <div class="media-body">
+                {% for item in year.items %}
+                <div class="my-1 d-flex">
+                    <div>{{ item.title }}</div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div> -->

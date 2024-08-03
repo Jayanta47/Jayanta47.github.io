@@ -1,0 +1,25 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-5">
+                <div class="row">
+                    <div class="col"><h2>My Resume</h2></div>
+                    <div class="ml-auto">
+                        <!-- <img src="/assets/images/download-pdf.png" class="inline-badge mt-2" style="height: 30px; width: 30px;"/> -->
+                        <a class="pr-3 no-break" target="_blank" href="{{site.data.profile.cv_link}}">
+                            <i class="fa-regular fa-file-pdf fa-2x mt-2 mr-2" style="color: #003399;"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr />
+                {% include widgets/work_experience.html %}
+                <hr />
+                {% include widgets/research_card.html %}
+                <hr />
+                {% include widgets/education_card.html %}
+                <hr />
+                {% include widgets/skill_card.html %}
+            </div>
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="row mt-3">
+    <div class="col">
+        <h4><img src="/assets/images/icons/graduate-hat.png" alt="education" class="inline-badge" style="width: 30px; height: 30px;"> Education</h4>
+        <ul class="timeline">
+            {% for item in site.data.profile.education %}
+            <li class="media mb-2">
+                <div class="media-body">
+                    <div><h5>{{ item.position }}</h5></div>
+                    <div class="d-flex">
+                        <div><b>{{ item.name }}</b></div>
+                        <div class="mt-auto ml-auto no-break text-muted"><em>{{ item.date }}</em></div>
+                    </div>
+                    <div>{{item.description}}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>          
+    </div>
+</div>

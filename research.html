@@ -1,0 +1,42 @@
+---
+layout: default
+title : Research Experience
+navbar_title: Research
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+
+        <section id="research-interests" class="pt-4">
+            <!-- <i class="fa-solid fa-book-open"></i> -->
+            <h2 style="margin-bottom: 8px;"><img src="/assets/images/icons/open-book.png" alt="Book" class="inline-badge" style="width: 35px; height: 35px;"> Research Interest</h2>
+            {% for keyword in site.data.profile.research_interests %}
+                        <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #adadad; border-radius: 5px; background-color: #fcfcfc; font-size: 16px;">{{ keyword }}</span>
+            {% endfor %}
+        </section>
+        <hr />
+
+        {% for year in pubs_by_year %}
+        {% assign num_papers = year.items | size %}
+        <h2 class="pt-4 text-right" id="year-{{ year.name }}">{{ year.name }}</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
+            {% for item in year.items %}
+                {% include widgets/publication_item.html item=item %}
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top bg-white shadow-sm rounded-sm" style="top: 250px">
+            {% for year in pubs_by_year %}
+            <a class="nav-link d-block text-center" href="#year-{{ year.name }}"><h6>{{ year.name }}</h6></a>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>

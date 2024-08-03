@@ -1,0 +1,232 @@
+primary_name: "Jayanta Sadhu"
+secondary_name: ""
+navbar_name: "Jayanta Sadhu"
+
+# positions:
+# - name: Position without logo
+# - logo: assets/images/badges/BUET_LOGO.png
+#   name: B.S., Peking University (2021)
+
+
+summary:
+- Hi I'm Jayanta - <b>PhD Fall'25 aspirant || MLE @ IQVIA</b> || Researcher @ BUET || SDE @ IQVIA
+- Passionate about Deeplearning and AI Systems, especially in the fields of <b>Adversarial ML, Efficient ML/Finetuning</b> and <b>AI Fairness</b>.
+- <b>First Author of 3 papers.</b>
+- Graduated From <b>CSE @ BUET</b>
+- Recipient of <b>RISE Research Grant</b> from RISE @ BUET for research.
+- "<b>CGPA: 3.85/4.00</b> . Recieved <b>Dean's List Scholarship</b> for academic excellence." 
+# - <b>Author of 3 papers</b>.
+
+
+email: "jayantasadhu4557@gmail.com"
+cv_link: https://drive.google.com/file/d/1CRCqPwkM-3xqd-nvjYI15M3PaV5tGiq2/view?usp=sharing
+gscholar: "Hgby-TUAAAAJ&hl=en"
+github: "Jayanta47"
+linkedin: "jayanta-sadhu/"
+twitter: jayanta_s_47
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# orcid: 0000-0000-0000-0000
+# <i class="fa-solid fa-user"></i>
+short_bio: >-
+  &#x1F44B Hi I'm Jayanta. I'm a learner and aspiring researcher. My interest lies in the fields of <b>Natural Language Processing (NLP), AI Fairness, Trustworthy ML and Efficient ML</b>. My current career goal is to pursue a Ph.D. in my field of interest.
+  <br/><br/>
+  &#x1F4DC I've been author of 3 research papers Bias and Fairness. Our paper titled <b>"An Empirical Study on the Characteristics of Bias upon Context Length Variation for Bangla"</b>
+  has been accepted at the findings section of the <b>64th Conference of Computational Linguistics  (ACL'2024)</b>. 
+  Other two works of mine are on Emotion and Social Biases in LLM Responses for Bangla Language. Among these, one paper titled <b>"An Empirical Study of Gendered Stereotypes in Emotional Attributes for Bangla in Multilingual Large Language Models"</b> has been <b>accepted in the 5th Workshop on Gender Bias in Natural Language Processing at ACL 2024!</b>
+  Please refer to my research section for more details.
+  <br/><br/>
+  🏫 I am a graduate from the <b>Department of Computer Science and Engineering(CSE)</b> from <b>Bangladesh University of Engineering and Technology</b>. It is a top ranked engineering university in Bangladesh and takes pride in creating some of the best engineers of the country.
+  <br/><br/>
+  &#x1F4DA My undergraduate thesis was on <b>"Detecting Gender Bias in Bangla Language Models"</b> under the supervision of <a href="https://cse.buet.ac.bd/faculty_list/detail/rifat">Dr. Rifat Shahriar</a>. 
+  In this work, we tried to show a detailed analysis of the responses of Bangla Language models in both static and contextual settings for the detection of gender bias. Our nuanced analysis for the context of Bangla 
+  gave us an insight about how the models respond owing to the inclusion of explcit or implicit gender.
+  <br/><br/>
+  &#x1F3C6 In my undergraduate life at buet, I've regularly participated and excelled at multiple competitions including 
+  <b>Dhaka AI 2020</b> and <b>HackNSU 2020</b>. I have taken up leadership roles at my departmental occasions especially our department's annual event <b>BUET CSE FEST</b>.
+  <br/><br/>
+  &#x1F3A1 In my leisure time, I enjoy reading thriller novels, listening to music and watching tv-series and movies.
+  <br/><br/>
+  😃 Fun Fact: My Personality type is <a href="https://www.16personalities.com/infp-personality"><b>INFP</b></a>. I like to call myself an <b>Empirical Skeptic</b>.
+
+portrait_url: /assets/images/photos/profile_photo.jpg
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+
+education:
+- name: Bangladesh University of Engineering and Technology
+  logo: /assets/images/badges/BUET_LOGO.png
+  position: B.Sc. in Computer Science and Engineering
+  date: May 2018 - May 2023
+  description: "CGPA: 3.85/4.00"
+
+- name: Dhaka Residential Model College
+  logo: /assets/images/badges/udayan_logo.png
+  position: H.S.C. in Science
+  date: July 2015 - June 2017
+  description: "GPA: 5.00/5.00"
+
+achievements:
+- name: Finalist 
+  organization: Bangladesh National NLP Hackathon
+  type: Competition
+  date: 2023
+- name: Finalist
+  organization: Robi Datathon
+  type: Competition
+  date: 2022
+- name: Finalist
+  organization: Bangladesh Blockchain Olympiad
+  type: Competition
+  date: 2022
+- name: Finalist
+  organization: Bangladesh CTF 2022
+  type: Competition
+  date: 2022
+- name: Finalist
+  organization: DhakaAI (Image Detection)
+  type: Competition
+  date: 2020
+- name: 2nd Runners Up
+  organization: HackNSU (Hackathon)
+  type: Competition
+  date: 2020
+- name: Participant
+  organization: IEEE VIP Cup
+  type: Competition
+  date: 2020
+- name: 9th Position
+  organization: Programming Contest, BUET CSE FEST 2019
+  type: Competition 
+  date: 2019
+- name: Divisional Winner
+  organization: 3th NMST National Biology Olympiad
+  type: Competition
+  date: 2017
+- name: Divisional Runner's Up
+  organization: First Bangladesh Chemistry Olympiad
+  type: Competition
+  date: 2017
+
+- name: Rise Research Grant
+  organization: Bangladesh University of Engineering and Technology
+  type: Honors & Awards
+  date: 2023
+
+- name: Dean's List Scholarship
+  organization: Bangladesh University of Engineering and Technology
+  type: Honors & Awards
+  date: 2018-2023
+
+- name: General Scholarship
+  organization: Dhaka Education Board
+  type: Honors & Awards
+  date: 2017
+
+# - name: Director of Design
+#   organization: BUET Security Club
+#   type: Leadership
+#   date: June 2023 - June 2024
+
+# - name: Vice-Chairperson (Activity)
+#   organization: IEEE Computer Society BUET Student Branch Chapter
+#   type: Leadership
+#   date: March 2023 - March 2024
+
+# - name: Assistant General Secretary
+#   organization: IEEE Computer Society BUET Student Branch Chapter
+#   type: Leadership
+#   date: May 2022 - February 2023
+
+# - name: Media Committee Coordinator
+#   organization: IEEE Computer Society BUET Student Branch Chapter
+#   type: Leadership
+#   date: February 2021 - May 2022
+
+# - name: Advisor of Student Panel
+#   organization: Udayan Science Club
+#   type: Leadership
+#   date: June 2018 - June 2019
+
+# - name: President
+#   organization: Udayan Science Club
+#   type: Leadership
+#   date: June 2017 - June 2018
+
+# - name: Vice-President
+#   organization: Udayan Debating Club
+#   type: Leadership
+#   date: June 2017 - June 2018
+
+skills:
+- type: Programming Languages
+  names:
+  - C
+  - C++
+  - C#
+  - Java
+  - Python
+  - JavaScript
+  - SQL
+  - Kotlin
+  - bash
+- type: Machine Learning Libraries
+  names:
+  - Numpy
+  - Pandas
+  - Scikit-learn
+  - Pytorch
+  - Transformers
+  - OpenAI
+  - Langchain
+  - OpenGL
+- type: Frameworks
+  names:
+  - Asp Dotnet
+  - Django
+  - Bootstrap
+  - JQuery
+  - Nodejs
+  - Flask
+- type: Database
+  names:
+  - Oracle
+  - PostgreSQL
+  - MySql
+  - MSSQL
+  - MongoDB
+- type: Cloud
+  names:
+  - AWS
+  - VastAI
+- type: Security Tools
+  names:
+  - Autopsy
+  - Wireshark
+  - NMap
+- type: Graphic Designing
+  names:
+  - Figma
+  - Canva
+- type: Miscellaneous
+  names:
+  - LATEX
+  - Firebase
+  - Git
+  - Docker
+  - Kubernetes
+- type: Soft Skills
+  names:
+  - Team management
+  - Problem‑solving
+  - Public Speaking
+  - Creative Writing
+
+
+research_interests:
+- NLP
+- AI Fairness
+- Systems
+- Software Engineering
+- Efficient AI

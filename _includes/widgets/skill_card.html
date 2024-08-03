@@ -1,0 +1,19 @@
+<div class="row mt-3">
+    <div class="col">
+        <h4><img src="/assets/images/icons/code.png" alt="skill" class="inline-badge" style="width: 30px; height: 30px;"> Technical Skills</h4>
+        <ul class="timeline">
+            {% for item in site.data.profile.skills %}
+            <li class="media mb-2">
+                <div class="media-body">
+                    <div><h6>{{ item.type }}</h6></div>
+                    <div>
+                        {% for name in item.names %}
+                            <span style="display: inline-block; margin: 4px; padding: 5px 10px; border: 1px solid #bababa; border-radius: 5px; background-color: #ffffff; font-size: 14px;">{{ name }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>          
+    </div>
+</div>

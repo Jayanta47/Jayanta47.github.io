@@ -1,0 +1,54 @@
+{% assign item = include.item %}
+<div class="d-none d-md-block">
+    <!-- <div class="no-gutters border-bottom border-gray mr-3"> -->
+    <div class="d-flex mb-3 mr-2">
+        {%- if item.cover -%}
+        <div class="col-md-3 col-xl-4 mb-md-0 p-md-3">
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" style="height: auto; object-fit: contain;">
+        </div>
+        <div class="col-md-3 col-xl-8 p-3 pl-md-0">
+        {%- else -%}
+        <div class="col p-3 ml-md-2">
+        {%- endif -%}
+            <h5 class="mt-0 mb-2 font-weight-bold">{{ item.title }}</h5>
+            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
+            <!-- <p class="mt-0 mb-2 small"><b>Supervisor:&nbsp;&nbsp;</b> {% include widgets/author_list.html authors=item.supervisor %}</p> -->
+            
+            <div class="small d-flex">
+                <div style="color: green">{{ item.pub_pre }}<b>{{ item.pub }}</b>{{ item.pub_post }}</div>
+                <div class="ml-auto"><em>{{ item.pub_date }}</em> {{ item.pub_last }}</div>
+            </div>
+            <!-- <p class="mt-0 mb-0 small">{{item.pub_pre}} <i>{{ item.pub }} </i>{{ item.pub_post }},  {{ item.pub_date }} {{ item.pub_last }}</p> -->
+            <p class="mt-2 mb-2 small text-muted" style="text-align: justify;"> <b>Abstract:</b> {{ item.abstract }}</p>
+            <!-- <p class="mt-0 mb-0 small"><b>Collaborators: &nbsp;&nbsp;</b>{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-2 small"><b>Supervisor:&nbsp;&nbsp;</b> {% include widgets/author_list.html authors=item.supervisor %}</p>
+             -->
+            <div class="small d-flex">
+                <div>
+                    <!-- <i class="fa-solid fa-tags fa-flip-horizontal"></i> -->
+                    <img src="/assets/images/icons/tag.png" alt="tag" class="inline-badge" style="width: 18px; height: 18px; margin-top: 2px;">
+                    {% for keyword in item.keywords %}
+                        <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">{{ keyword }}</span>
+                    {% endfor %}
+                </div>
+                <div class="ml-auto">
+                    <p class="pb-0 mb-0 lh-125 text-muted abstract-links">
+                        {% for link in item.links %}
+                        {% if link[1].url %}
+                        <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                        {% else %}
+                            {% if link[0] == 'Paper' %}
+                                <a target="_blank" href="{{ link[1] }}"><i class="fa-solid fa-book fa-2x" style="color: #0084f0;"></i></a>
+                                &nbsp;&nbsp;
+                            {% else %}
+                                <a target="_blank" href="{{ link[1] }}"><i class="fa-brands fa-github fa-2x" style="color: #3b3b3b;"></i></a>
+                            {% endif %}
+                        {% endif %}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+{% assign top_exp = site.data.work_experience | slice: 0, 1 %}
+
+<div class="row mt-3">
+    <div class="col">
+        <h4><img src="/assets/images/icons/suitcase.png" alt="Book" class="inline-badge" style="width: 28px; height: 28px;"> Work Experience</h4>
+        <ul class="timeline">
+        {% for item in top_exp %}
+            <li class="media mb-4">
+                <div class="media-body">
+                    <div class="d-flex">
+                        <div><h5><b>{{ item.name }}</b></h5></div>
+                        <!-- <div class="ml-2"><img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 25px; height: 25px;"/></div> -->
+                    </div>
+                    {% if item.logo %}
+                    <div class="p-2">
+                        <img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 50px; height: 50px;"/>
+                    </div>
+                    {% endif %}
+                    <!-- <ul class = "timeline"> -->
+                    {% for position in item.positions %}
+                    <!-- <li> -->
+                        <div class="d-flex mb-2">
+                            <div style="color: #003399; font-size: 18px;"><strong>{{ position.position }}</strong></div>
+                            <div class="ml-auto no-break text-muted" style="font-size: 14px;"><em>{{ position.date }}</em></div>
+                        </div>
+                        <!-- <div class="small">{{position.description}}</div> -->
+                        {% if position.description %}
+                            <ul>
+                                {% for desc in position.description %}
+                                <li style="text-align: justify; font-size: 14px;">{{ desc }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+
+                        {% if position.keywords %}
+                        <div class="small d-flex mt-2">
+                            <div>
+                                <!-- <i class="fa-solid fa-tags fa-flip-horizontal"></i> -->
+                                <img src="/assets/images/icons/tag.png" alt="tag" class="inline-badge" style="width: 18px; height: 18px; margin-top: 2px;">
+                                {% for keyword in position.keywords %}
+                                    <span style="display: inline-block; margin: 2px; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #f5f5f5; font-size: 12px;">{{ keyword }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        <br/>
+                    <!-- </li> -->
+                    {% endfor %}
+                    <!-- </ul> -->
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<h6 class="d-block text-center">
+    <a href="{{ 'experience' | relative_url }}">All Work Experience <i class="fas fa-angle-double-right"></i></a>
+</h6>

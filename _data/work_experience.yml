@@ -1,0 +1,39 @@
+- name: IQVIA 
+  positions:
+    - position: Machine Learning Engineer
+      date: June 2024 - Present
+      description:
+      - Developing and managing end-to-end Machine Learning systems, focusing on fine-tuning LLMs with curated datasets and PEFT and LoRA techniques for enhanced data analytics.
+      - Working with Agentic Retrieval-Augmented Generation (RAG) systems to drive innovation in data retrieval techniques to accomodate the needs of data specific answer generation.
+      - Using Amazon SageMaker and Docker for model training and deployments.
+      - Collaborating with a supportive team to foster growth and enhance engineering capabilities.
+      keywords:
+        - Generative AI
+        - LLM
+        - Data Preparation
+        - Feature Engineering
+        - Multi Agent Systems
+        - Agentic RAG
+        - Model Finetuning
+        - PEFT/LORA
+        - Sagemaker
+        - Docker
+        - Pytorch
+
+- name: IQVIA 
+  positions:
+    - position: Software Development Engineer 1
+      date: June 2023 - June 2024
+      description:
+      - Worked as a backend developer in the KPI team, responsible for direct engagement with top pharmaceutical companies on data analytics projects.
+      - Utilized cutting-edge technologies to develop and maintain high-performance backend systems.
+      - Designed and implemented key features to enhance data processing and reporting capabilities.
+      - Collaborated with cross-functional teams to ensure seamless integration and delivery of technical solutions.
+      keywords:
+        - Software Development
+        - Backend Development
+        - Data Analytics
+        - Feature Design
+        - .NET Development
+        - High-performance Systems
+        - Cross-functional Collaboration
