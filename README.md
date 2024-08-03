@@ -39,4 +39,4 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 
 # Portfolio Website
 
-This is my personal portfolio website repository. It is built using Jekyll and deployed to GitHub Pages. The original template is taken from [academic-homepage](https://github.com/luost26/academic-homepage). However, I have made several modifications to the template to suit my needs. You can view my website [here](https://maneesha28.github.io/).
+This is my personal portfolio website repository. It is built using Jekyll and deployed to GitHub Pages. The original template is taken from [academic-homepage](https://github.com/luost26/academic-homepage). However, I have made several modifications to the template to suit my needs. You can view my website [here](https://Jayanta47.github.io/).
