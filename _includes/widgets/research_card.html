@@ -1,4 +1,4 @@
-{% assign top_pubs = site.publications | sort: "date" | reverse | slice: 0, 3 %}
+{% assign top_pubs = site.publications | where: "selected", true | sort: "date" | reverse  %}
 {% assign pubs_by_year = top_pubs | group_by_exp: "item", "item.date | date: '%Y'" %}
 
 <div class="row mt-3">
@@ -14,5 +14,5 @@
     </div>
 </div>
 <h6 class="d-block text-center">
-    <a href="{{ 'publications' | relative_url }}">All Publications <i class="fas fa-angle-double-right"></i></a>
+    <a href="{{ 'publications' | relative_url }}">All Research and Publications <i class="fas fa-angle-double-right"></i></a>
 </h6>

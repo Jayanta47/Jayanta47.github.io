@@ -1,7 +1,7 @@
 ---
 title:          "An Empirical Study of Gendered Stereotypes in Emotional Attributes for Bangla in Multilingual Large Language Models"
-date:           2024-07-08 00:01:00 +0800
-# selected:       true
+date:           2024-07-08
+selected:       true
 pub:            "5th Workshop on Gender Bias in Natural Language Processing at ACL 2024"
 pub_pre:        "Accepted in "
 # pub_post:       'Undergraduate Thesis'
@@ -11,8 +11,8 @@ pub_date:       "April 2024 - July 2024"
 supervisor:     
 - Dr. Rifat Shahriyar (Professor, BUET)
 
-abstract: >-
-  The influence of Large Language Models (LLMs) is rapidly growing, automating more jobs over time. Assessing the fairness of LLMs is crucial due to their expanding impact. Studies reveal the reflection of societal norms and biases in LLMs, which creates a risk of propagating societal stereotypes in downstream tasks. Many studies on bias in LLMs focus on gender bias in various NLP applications. However, there's a gap in research on bias in emotional attributes, despite the close societal link between emotion and gender. This gap is even larger for low-resource languages like Bangla. Historically, women are associated with emotions like empathy, fear, and guilt, while men are linked to anger, bravado, and authority. This pattern reflects societal norms in Bangla-speaking regions. We offer the first thorough investigation of gendered emotion attribution in Bangla for both closed and open source LLMs in this work. Our aim is to elucidate the intricate societal relationship between gender and emotion specifically within the context of Bangla. We have been successful in showing the existence of gender bias in the context of emotions in Bangla through analytical methods and also show how emotion attribution changes on the basis of gendered role selection in LLMs. All of our resources including code and data are made publicly available to support future research on Bangla NLP.
+details: >-
+  In this study, we conducted a research that investigated gendered stereotypes in emotional attributes within multilingual large language models (LLMs) for Bangla. The study analyzed historical patterns, revealing how women were often associated with emotions like empathy and guilt, while men were linked to emotions such as anger and authority in Bangla-speaking regions. We evaluated both closed and open-source LLMs to identify gender biases in emotion attribution. The project included qualitative and quantitative analysis of LLM responses to Bangla gender attribution tasks and highlighted the influence of gendered role selection on these outcomes. We also developed and publicly shared datasets and code to support further research in Bangla NLP. Please refer to the paper link for more details.
 # cover:          /assets/images/covers/alumnet.jpg
 cover: assets/images/covers/Junto.webp
 authors:
@@ -23,6 +23,7 @@ keywords:
     - LLM
     - Emotion Attributes
     - Bangla Gender Bias
+    - Inference
 links:
   Paper: https://arxiv.org/pdf/2407.06432
   Code: https://github.com/csebuetnlp/BanglaEmotionBias

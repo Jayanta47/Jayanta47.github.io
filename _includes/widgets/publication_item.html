@@ -19,7 +19,12 @@
                 <div class="ml-auto"><em>{{ item.pub_date }}</em> {{ item.pub_last }}</div>
             </div>
             <!-- <p class="mt-0 mb-0 small">{{item.pub_pre}} <i>{{ item.pub }} </i>{{ item.pub_post }},  {{ item.pub_date }} {{ item.pub_last }}</p> -->
-            <p class="mt-2 mb-2 small text-muted" style="text-align: justify;"> <b>Abstract:</b> {{ item.abstract }}</p>
+            {%- if item.abstract -%}
+                <p class="mt-1 mb-2 small text-muted" style="text-align: justify;"> <b>Abstract:</b> {{ item.abstract }}</p>
+            {%- endif -%}
+            {%- if item.details -%}
+                <p class="mt-1 mb-2 small text-muted" style="text-align: justify;"> <b>Details:</b> {{ item.details }}</p>
+            {%- endif -%}
             <!-- <p class="mt-0 mb-0 small"><b>Collaborators: &nbsp;&nbsp;</b>{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-2 small"><b>Supervisor:&nbsp;&nbsp;</b> {% include widgets/author_list.html authors=item.supervisor %}</p>
              -->
