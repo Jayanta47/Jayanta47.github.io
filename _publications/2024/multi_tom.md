@@ -1,8 +1,8 @@
 ---
-title:          "Multi-ToM: A multilingual dataset for evaluating Theory of Mind capabilities across languages and culture"
+title:          "Multi-ToM: Evaluating Multilingual Theory of Mind Capabilities in Large Language Models"
 date:           2024-08-15 00:01:00 +0800
 selected:       false
-# pub:            "5th Workshop on Gender Bias in Natural Language Processing at ACL 2024"
+pub:            "Currently Under Review for COLING 25"
 # pub_pre:        "Accepted in "
 # pub_post:       'Undergraduate Thesis'
 # pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
@@ -17,8 +17,10 @@ details: >-
 cover:  assets/images/covers/multitom.jpg
 authors:
   - Jayanta Sadhu 
+  - Ayan Antik Khan
   - Noshin Nawal
   - Sanju Basak
+  - Abhik Bhattacharya
 keywords:
     - LLM
     - Theory of Mind
